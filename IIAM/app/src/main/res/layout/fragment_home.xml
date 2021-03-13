@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDarkNavyBlue"
+    android:orientation="vertical"
+    tools:context=".home.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:layout_weight="1.7"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/TextViewStyleBold"
+                android:includeFontPadding="false"
+                android:text="@string/hello"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_26ssp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvName"
+                style="@style/TextViewStyleBold"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:ellipsize="end"
+                android:includeFontPadding="false"
+                android:singleLine="true"
+                android:textColor="@color/colorBlue"
+                android:textSize="@dimen/_26ssp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/TextViewStyleRegular"
+                android:includeFontPadding="false"
+                android:text="@string/welcome_to"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_16ssp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/TextViewStyleBold"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:includeFontPadding="false"
+                android:text="@string/iiam"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_16ssp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8.3"
+        android:background="@drawable/bg_white_top_corners"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/_16sdp"
+        android:paddingBottom="@dimen/_16sdp"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            tools:ignore="NestedWeights">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/btnAboutMe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:clickable="true"
+                android:focusable="true"
+                app:srcCompat="@drawable/selector_about_me" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/btnAbilities"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:clickable="true"
+                android:focusable="true"
+                app:srcCompat="@drawable/selector_abilities" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/btnMedications"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:clickable="true"
+                android:focusable="true"
+                app:srcCompat="@drawable/selector_medications" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/btnConditions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:clickable="true"
+                android:focusable="true"
+                app:srcCompat="@drawable/selector_conditions" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/btnRecords"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:clickable="true"
+                android:focusable="true"
+                app:srcCompat="@drawable/selector_records" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/btnSummary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:clickable="true"
+                android:focusable="true"
+                app:srcCompat="@drawable/selector_summary" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

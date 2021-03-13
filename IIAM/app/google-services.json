@@ -1,0 +1,64 @@
+{
+  "project_info": {
+    "project_number": "299696792624",
+    "firebase_url": "https://iiam-app.firebaseio.com",
+    "project_id": "iiam-app",
+    "storage_bucket": "iiam-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:299696792624:android:a7defd6270009f9b2879f5",
+        "android_client_info": {
+          "package_name": "com.app.iiam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "299696792624-l142s6jehktpodhko1imrqu8d8l67cd9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.iiam",
+            "certificate_hash": "9bddc4af2769d843b73ef0ddebf6648bb42b7482"
+          }
+        },
+        {
+          "client_id": "299696792624-1ttlquqm87m9akf91is6ot7eggkh88kh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.iiam",
+            "certificate_hash": "c467a0e12d2f074a4e7bbf93ff9b84595f321d12"
+          }
+        },
+        {
+          "client_id": "299696792624-qcaurqnlok351cqng5osjad1dnl7mp8i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.iiam",
+            "certificate_hash": "fcef5a012c5f85d8da0d0d8b39b324c7a6961d66"
+          }
+        },
+        {
+          "client_id": "299696792624-663bku1rn820ekoj9t832h8piq5r2fno.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxr0i2qGO7Rj7of6Mmy9BFRQqE3e57zT4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "299696792624-663bku1rn820ekoj9t832h8piq5r2fno.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

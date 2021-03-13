@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDarkNavyBlue"
+    android:orientation="vertical"
+    tools:context=".summary.SummaryActivity">
+
+    <include layout="@layout/toolbar_home" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_white_top_corners"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/_16sdp"
+            android:paddingBottom="@dimen/_16sdp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/TextViewStyleBold"
+                android:paddingStart="@dimen/_16sdp"
+                android:paddingEnd="@dimen/_16sdp"
+                android:text="@string/about_me_"
+                android:textColor="@color/colorGreenBlue"
+                android:textSize="@dimen/_16ssp" />
+
+            <LinearLayout
+                android:id="@+id/llAboutMeBio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvName"
+                    style="@style/TextViewStyleMedium"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/_16sdp"
+                    android:paddingEnd="@dimen/_16sdp"
+                    android:textColor="@color/colorLightNavyBlue"
+                    android:textSize="@dimen/_12ssp"
+                    tools:text="Name: Jaini Sheth" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvPreferredName"
+                    style="@style/TextViewStyleMedium"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/_16sdp"
+                    android:paddingEnd="@dimen/_16sdp"
+                    android:textColor="@color/colorLightNavyBlue"
+                    android:textSize="@dimen/_12ssp"
+                    tools:text="Preferred Name: Jaini" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvAge"
+                    style="@style/TextViewStyleMedium"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/_16sdp"
+                    android:paddingEnd="@dimen/_16sdp"
+                    android:textColor="@color/colorLightNavyBlue"
+                    android:textSize="@dimen/_12ssp"
+                    tools:text="Age: 27" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvGender"
+                    style="@style/TextViewStyleMedium"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/_16sdp"
+                    android:paddingEnd="@dimen/_16sdp"
+                    android:textColor="@color/colorLightNavyBlue"
+                    android:textSize="@dimen/_12ssp"
+                    tools:text="Gender: Female" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvAllergies"
+                    style="@style/TextViewStyleMedium"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:paddingStart="@dimen/_16sdp"
+                    android:paddingEnd="@dimen/_16sdp"
+                    android:textColor="@color/colorLightNavyBlue"
+                    android:textSize="@dimen/_12ssp"
+                    tools:text="Allergies: No one" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvPhoneNumber"
+                    style="@style/TextViewStyleMedium"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:paddingStart="@dimen/_16sdp"
+                    android:paddingEnd="@dimen/_16sdp"
+                    android:textColor="@color/colorLightNavyBlue"
+                    android:textSize="@dimen/_12ssp"
+                    tools:text="Phone Number: 9409391701" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvEmail"
+                    style="@style/TextViewStyleMedium"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:paddingStart="@dimen/_16sdp"
+                    android:paddingEnd="@dimen/_16sdp"
+                    android:textColor="@color/colorLightNavyBlue"
+                    android:textSize="@dimen/_12ssp"
+                    tools:text="Email: jaini.sheth@openxcellinc.com" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvEmergencyContact"
+                    style="@style/TextViewStyleMedium"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:paddingStart="@dimen/_16sdp"
+                    android:paddingEnd="@dimen/_16sdp"
+                    android:textColor="@color/colorLightNavyBlue"
+                    android:textSize="@dimen/_12ssp"
+                    tools:text="Emergency Contact: 9409391701" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvInfo"
+                    style="@style/TextViewStyleMedium"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:paddingStart="@dimen/_16sdp"
+                    android:paddingEnd="@dimen/_16sdp"
+                    android:textColor="@color/colorLightNavyBlue"
+                    android:textSize="@dimen/_12ssp"
+                    tools:text="@string/more_info" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="0.5dp"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_16sdp"
+                    android:background="@color/colorHint" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvNotes"
+                style="@style/TextViewStyleMedium"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingStart="@dimen/_16sdp"
+                android:paddingEnd="@dimen/_16sdp"
+                android:text="@string/no_notes_data_available"
+                android:textColor="@color/colorBrown"
+                android:textSize="@dimen/_14ssp"
+                android:visibility="visible" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvNotes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_11sdp"
+                android:layout_marginEnd="@dimen/_11sdp"
+                android:clipToPadding="false"
+                android:nestedScrollingEnabled="false"
+                android:overScrollMode="never"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:scrollbars="vertical"
+                android:visibility="gone"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_notes" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0.5dp"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:background="@color/colorHint" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/TextViewStyleBold"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:paddingStart="@dimen/_16sdp"
+                android:paddingEnd="@dimen/_16sdp"
+                android:text="@string/abilities_"
+                android:textColor="@color/colorGreenBlue"
+                android:textSize="@dimen/_16ssp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvAbilities"
+                style="@style/TextViewStyleMedium"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingStart="@dimen/_16sdp"
+                android:paddingEnd="@dimen/_16sdp"
+                android:text="@string/no_abilities"
+                android:textColor="@color/colorBrown"
+                android:textSize="@dimen/_14ssp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvAbilities"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_11sdp"
+                android:layout_marginEnd="@dimen/_11sdp"
+                android:clipToPadding="false"
+                android:nestedScrollingEnabled="false"
+                android:overScrollMode="never"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:scrollbars="vertical"
+                android:visibility="gone"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_abilities" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0.5dp"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:background="@color/colorHint" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/TextViewStyleBold"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:paddingStart="@dimen/_16sdp"
+                android:paddingEnd="@dimen/_16sdp"
+                android:text="@string/medications_"
+                android:textColor="@color/colorGreenBlue"
+                android:textSize="@dimen/_16ssp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvMedications"
+                style="@style/TextViewStyleMedium"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingStart="@dimen/_16sdp"
+                android:paddingEnd="@dimen/_16sdp"
+                android:text="@string/no_medications"
+                android:textColor="@color/colorBrown"
+                android:textSize="@dimen/_14ssp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvMedications"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_11sdp"
+                android:layout_marginEnd="@dimen/_11sdp"
+                android:clipToPadding="false"
+                android:nestedScrollingEnabled="false"
+                android:overScrollMode="never"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:scrollbars="vertical"
+                android:visibility="gone"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_medications" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0.5dp"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:background="@color/colorHint" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/TextViewStyleBold"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:paddingStart="@dimen/_16sdp"
+                android:paddingEnd="@dimen/_16sdp"
+                android:text="@string/conditions_"
+                android:textColor="@color/colorGreenBlue"
+                android:textSize="@dimen/_16ssp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvConditions"
+                style="@style/TextViewStyleMedium"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingStart="@dimen/_16sdp"
+                android:paddingEnd="@dimen/_16sdp"
+                android:text="@string/no_conditions"
+                android:textColor="@color/colorBrown"
+                android:textSize="@dimen/_14ssp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvConditions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_11sdp"
+                android:layout_marginEnd="@dimen/_11sdp"
+                android:clipToPadding="false"
+                android:nestedScrollingEnabled="false"
+                android:overScrollMode="never"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:scrollbars="vertical"
+                android:visibility="gone"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_conditions" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0.5dp"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:background="@color/colorHint" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/TextViewStyleBold"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:paddingStart="@dimen/_16sdp"
+                android:paddingEnd="@dimen/_16sdp"
+                android:text="@string/records_"
+                android:textColor="@color/colorGreenBlue"
+                android:textSize="@dimen/_16ssp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvRecords"
+                style="@style/TextViewStyleMedium"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:paddingStart="@dimen/_16sdp"
+                android:paddingEnd="@dimen/_16sdp"
+                android:text="@string/no_records_available"
+                android:textColor="@color/colorBrown"
+                android:textSize="@dimen/_14ssp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvRecords"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_11sdp"
+                android:layout_marginEnd="@dimen/_11sdp"
+                android:clipToPadding="false"
+                android:nestedScrollingEnabled="false"
+                android:overScrollMode="never"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:scrollbars="vertical"
+                android:visibility="gone"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_records" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0.5dp"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:background="@color/colorHint" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

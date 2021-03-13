@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorTransparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/bg_white_curve"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/_16sdp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/TextViewStyleBold"
+            android:layout_gravity="center"
+            android:text="@string/confirm"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_15ssp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDialogTitle"
+            style="@style/TextViewStyleRegular"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:text="@string/are_you_sure_you_want_to_delete"
+            android:textColor="@color/colorText"
+            android:textSize="@dimen/_12ssp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@color/colorHint" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvDialogCancel"
+                style="@style/TextViewStyleMedium"
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:text="@string/cancel"
+                android:textColor="@color/colorLightNavyBlue"
+                android:textSize="@dimen/_14ssp" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorHint" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvDialogDelete"
+                style="@style/TextViewStyleMedium"
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:text="@string/delete"
+                android:textColor="@color/colorLightNavyBlue"
+                android:textSize="@dimen/_14ssp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

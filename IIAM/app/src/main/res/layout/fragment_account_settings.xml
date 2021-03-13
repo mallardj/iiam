@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDarkNavyBlue"
+    android:orientation="vertical"
+    tools:context=".accountsettings.AccountSettingsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_white_top_corners"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="@dimen/_20sdp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_account_settings" />
+
+            <LinearLayout
+                android:id="@+id/llChangePassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/bg_white_grey_border_curve"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/_16sdp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_change_password" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/TextViewStyleMedium"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingEnd="0dp"
+                    android:text="@string/change_password"
+                    android:textColor="@color/colorLightNavyBlue"
+                    android:textSize="@dimen/_14ssp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_grey_arrow" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDeleteAccountInformation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/bg_white_grey_border_curve"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/_16sdp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_delete_account" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/TextViewStyleMedium"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingEnd="0dp"
+                    android:text="@string/delete_account_information"
+                    android:textColor="@color/colorLightNavyBlue"
+                    android:textSize="@dimen/_14ssp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_grey_arrow" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

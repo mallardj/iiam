@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".fullscreenimage.FullScreenImageVideoActivity">
+
+    <RelativeLayout
+        android:id="@+id/rlImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <com.app.iiam.utils.TouchImageView
+            android:id="@+id/ivImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/ivClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/cancel"
+            android:padding="@dimen/_16sdp"
+            android:src="@drawable/ic_close"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:id="@+id/epVideoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:visibility="gone"
+        app:controller_layout_id="@layout/item_video_controller" />
+
+</LinearLayout>

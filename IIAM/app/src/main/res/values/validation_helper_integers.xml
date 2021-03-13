@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- add new min max values for inputs here-->
+    <integer name="min_name">2</integer>
+    <integer name="max_name">30</integer>
+    <integer name="min_password">6</integer>
+    <integer name="max_password">16</integer>
+    <integer name="exect_verification_code">4</integer>
+    <integer name="min_phone_number">8</integer>
+    <integer name="max_phone_number">10</integer>
+</resources>

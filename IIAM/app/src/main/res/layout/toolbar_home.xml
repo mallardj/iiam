@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/colorDarkNavyBlue"
+    android:contentInsetStart="0dp"
+    android:contentInsetLeft="0dp"
+    android:contentInsetEnd="0dp"
+    android:contentInsetRight="0dp"
+    android:theme="@style/AppTheme.AppBarOverlay"
+    app:contentInsetEnd="0dp"
+    app:contentInsetLeft="0dp"
+    app:contentInsetRight="0dp"
+    app:contentInsetStart="0dp"
+    app:layout_collapseMode="pin"
+    app:popupTheme="@style/AppTheme.PopupOverlay"
+    app:titleTextColor="@color/colorWhite">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:paddingStart="@dimen/_16sdp"
+            android:paddingEnd="@dimen/_16sdp"
+            android:src="@drawable/ic_back_white"
+            android:visibility="gone" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvToolbarName"
+            style="@style/TextViewStyleBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/ivBack"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_15ssp"
+            android:visibility="gone"
+            tools:text="Title" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvToolbarTitle"
+            style="@style/TextViewStyleBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_15ssp"
+            android:visibility="gone"
+            tools:text="Title" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivToolbarRightIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:paddingStart="@dimen/_16sdp"
+            android:paddingEnd="@dimen/_16sdp"
+            android:src="@drawable/ic_signout"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</androidx.appcompat.widget.Toolbar>

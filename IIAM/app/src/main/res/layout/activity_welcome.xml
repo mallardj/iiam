@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDarkNavyBlue"
+    tools:context=".welcome.WelcomeActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_welcome_bg" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_70sdp"
+        android:src="@drawable/ic_iiam_icon" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvWelcome"
+        style="@style/TextViewStyleBold"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/welcome"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_24ssp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/TextViewStyleMedium"
+        android:layout_below="@+id/tvWelcome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:gravity="center"
+        android:lineSpacingExtra="@dimen/_3sdp"
+        android:paddingStart="@dimen/_30sdp"
+        android:paddingEnd="@dimen/_30sdp"
+        android:text="@string/iiam_is_a_personal_and_medical_passport_for_all_individuals"
+        android:textColor="@color/colorLightWhite"
+        android:textSize="@dimen/_11ssp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnReturningUser"
+        style="@style/ButtonStyleBold"
+        android:layout_above="@+id/btnNewUser"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:text="@string/returning_user"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_14ssp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnNewUser"
+        style="@style/ButtonStyleBold"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:background="@drawable/btn_transparent_green_blue_border"
+        android:text="@string/new_user"
+        android:textColor="@color/colorGreenBlue"
+        android:textSize="@dimen/_14ssp" />
+
+</RelativeLayout>

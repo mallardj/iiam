@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDarkNavyBlue"
+    android:orientation="vertical"
+    tools:context=".addrecord.AddRecordActivity">
+
+    <include layout="@layout/toolbar_home" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_white_top_corners"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="@dimen/_20sdp">
+
+            <ImageView
+                android:id="@+id/tvAddPicture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_add_picture"
+                android:visibility="visible" />
+
+            <FrameLayout
+                android:id="@+id/fmRecord"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_165sdp"
+                android:visibility="gone">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/autoPagerImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop" />
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tabImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_16sdp"
+                    android:layout_gravity="bottom|center"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:background="@drawable/tab_background"
+                    android:paddingStart="@dimen/_5sdp"
+                    android:paddingEnd="@dimen/_5ssp"
+                    app:tabBackground="@drawable/viewpager_tab_selector"
+                    app:tabGravity="center"
+                    app:tabIndicatorHeight="0dp"
+                    app:tabMaxWidth="@dimen/_10sdp" />
+
+            </FrameLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilDocumentName"
+                style="@style/TextInputLayoutStyle"
+                android:layout_marginTop="@dimen/_25sdp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etDocumentName"
+                    style="@style/EditTextStyleRegular"
+                    android:gravity="top"
+                    android:hint="@string/document_name"
+                    android:imeOptions="actionNext"
+                    android:inputType="textMultiLine"
+                    android:lines="3"
+                    android:maxLines="8"
+                    android:nextFocusDown="@id/tilDate"
+                    android:overScrollMode="always"
+                    android:scrollbarStyle="insideInset"
+                    android:scrollbars="vertical"
+                    android:singleLine="false" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilDate"
+                style="@style/TextInputLayoutStyle"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etDate"
+                    style="@style/EditTextStyleRegular"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:hint="@string/date"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:nextFocusDown="@id/tilPagesInDocument" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilPagesInDocument"
+                style="@style/TextInputLayoutStyle"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etPagesInDocument"
+                    style="@style/EditTextStyleRegular"
+                    android:gravity="top"
+                    android:hint="@string/pages_in_document"
+                    android:imeOptions="actionDone"
+                    android:inputType="textMultiLine"
+                    android:lines="3"
+                    android:maxLines="8"
+                    android:overScrollMode="always"
+                    android:scrollbarStyle="insideInset"
+                    android:scrollbars="vertical"
+                    android:singleLine="false" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSubmit"
+                style="@style/ButtonStyleBold"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="@string/submit"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_14ssp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lItemMain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp"
+    app:cardCornerRadius="@dimen/_4sdp"
+    app:elevation="@dimen/_50sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/fmItemImage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150sdp">
+
+            <ImageView
+                android:id="@+id/ivItemImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_comment_dumy"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg_on_images"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/ivPlay"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_play"
+                android:visibility="gone" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvItemTitle"
+                style="@style/TextViewStyleBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:paddingStart="@dimen/_16sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_16sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_16ssp"
+                tools:text="Sample Note" />
+
+        </FrameLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvItemDate"
+            style="@style/TextViewStyleMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:paddingStart="@dimen/_16sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_16sdp"
+            android:textColor="@color/colorLightNavyBlue_opacity"
+            android:textSize="@dimen/_12ssp"
+            tools:text="01/02/2020" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvItemNameTitle"
+            style="@style/TextViewStyleMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="-10dp"
+            android:paddingStart="@dimen/_16sdp"
+            android:paddingEnd="@dimen/_16sdp"
+            android:text="@string/name"
+            android:textColor="@color/colorGreenBlue"
+            android:textSize="@dimen/_12ssp"
+            android:visibility="gone" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvItemName"
+            style="@style/TextViewStyleRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:paddingStart="@dimen/_16sdp"
+            android:paddingTop="@dimen/_3sdp"
+            android:paddingEnd="@dimen/_16sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:textColor="@color/colorLightNavyBlue"
+            android:textSize="@dimen/_14ssp"
+            android:visibility="gone"
+            tools:text="Note" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/TextViewStyleMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="-10dp"
+            android:paddingStart="@dimen/_16sdp"
+            android:paddingEnd="@dimen/_16sdp"
+            android:text="@string/comments"
+            android:textColor="@color/colorGreenBlue"
+            android:textSize="@dimen/_12ssp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvItemComment"
+            style="@style/TextViewStyleRegular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:paddingStart="@dimen/_16sdp"
+            android:paddingTop="@dimen/_3sdp"
+            android:paddingEnd="@dimen/_16sdp"
+            android:paddingBottom="@dimen/_10sdp"
+            android:textColor="@color/colorLightNavyBlue"
+            android:textSize="@dimen/_14ssp"
+            tools:text="This is an example of a plain text note." />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

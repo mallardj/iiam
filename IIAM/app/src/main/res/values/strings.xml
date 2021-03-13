@@ -1,0 +1,591 @@
+<resources>
+    <string name="app_name">IIAM</string>
+
+    <!--Welcome Screen-->
+    <string name="welcome">Welcome!</string>
+    <string name="iiam_is_a_personal_and_medical_passport_for_all_individuals">IIAM is a personal and medical passport for all individuals.</string>
+    <string name="returning_user">Returning User</string>
+    <string name="new_user">New User</string>
+
+    <!--Home Screen-->
+    <string name="hello">Hello</string>
+    <string name="there">there,</string>
+    <string name="welcome_to">Welcome to</string>
+    <string name="iiam">IIAM</string>
+
+    <!--Signup Screen-->
+    <string name="create_new_account">Create New Account</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="re_type_password">Re-type Password</string>
+    <string name="text_agree_terms_policies_sign_up">By Creating New Account, you agree to our\nTerms &amp; Conditions.</string>
+    <string name="terms_and_conditions">Terms &amp; Conditions.</string>
+    <string name="terms_and_conditions_title">Terms &amp; Conditions</string>
+
+    <!--SignIn Screen-->
+    <string name="returning_user_login">Returning User Login</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="login">Login</string>
+    <string name="don_t_have_an_account_create_account">Don’t have an account? Create Account</string>
+    <string name="create_account">Create Account</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="andrea_james">Andrea James</string>
+    <string name="reset_password">Please check your email for instructions to reset the password.</string>
+
+    <!-- Navigation Drawer -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="home">Home</string>
+    <string name="send_summary">Send Summary</string>
+    <string name="send_medications_list">Send Medications List</string>
+    <string name="account_settings">Account Settings</string>
+
+    <!--Send Summary-->
+    <string name="recipient_email">Recipient Email</string>
+    <string name="confirm_email">Confirm Email</string>
+    <string name="submit">Submit</string>
+
+    <!--Account Settings-->
+    <string name="delete_account_information">Delete Account Information</string>
+    <string name="change_password">Change Password</string>
+    <string name="signout">Signout</string>
+    <string name="are_you_sure_you_want_to_signout">Are you sure you want to signout?</string>
+    <string name="are_you_sure_you_want_to_delete_this_account">Are you sure you want to delete this account?</string>
+
+    <!--Change Password-->
+    <string name="current_password">Current Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_new_password">Confirm New Password</string>
+
+    <!--About Me-->
+    <string name="about_me">About Me</string>
+    <string name="about_me_">About Me:</string>
+    <string name="notes_">Notes:</string>
+    <string name="no_data_available">No Data Available</string>
+    <string name="no_personal_info_available">No Personal Info Available</string>
+    <string name="personal_info">Personal Info</string>
+    <string name="no_notes_data_available">No Notes Data Available</string>
+    <string name="lorem_ipsum_dummy_text">Lorem Ipsum is simply dummy text of the\nprinting and typesetting industry.</string>
+    <string name="options">Options</string>
+    <string name="add_biographic_information">Add biographic information</string>
+    <string name="edit_biographic_information">Edit biographic information</string>
+    <string name="add_note_">Add note</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="confirm">Confirm!</string>
+    <string name="picture">Picture</string>
+    <string name="are_you_sure_you_want_to_delete_this_note">Are you sure you want to delete this note?</string>
+
+    <!--Add Biographic Information-->
+    <string name="biographic_info">Biographic Info</string>
+    <string name="add_profile_picture">Add profile picture</string>
+    <string name="profile_picture">Profile Picture</string>
+    <string name="name">Name</string>
+    <string name="preferred_name">Preferred Name</string>
+    <string name="age">Age</string>
+    <string name="allergies">Allergies</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="emergency_contact">Emergency Contact</string>
+    <string name="yrs">Yrs</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="more_info">Please view the below content for additional information about</string>
+
+    <!--Add Note-->
+    <string name="notes">Notes</string>
+    <string name="add_note">Add Note</string>
+    <string name="date">Date</string>
+    <string name="title">Title</string>
+    <string name="comment">Comment</string>
+    <string name="edit_note">Edit Note</string>
+    <string name="edit_note_">Edit note</string>
+    <string name="delete_note">Delete note</string>
+    <string name="image">Image</string>
+    <string name="video">Video</string>
+    <string name="remove_media">Remove media</string>
+    <string name="remove_image">Remove image</string>
+
+    <!--Abilities-->
+    <string name="abilities">Abilities</string>
+    <string name="abilities_">Abilities:</string>
+    <string name="no_abilities">No Abilities Data Available</string>
+    <string name="add_abilities">Add abilities</string>
+    <string name="add_abilities_">Add Abilities</string>
+    <string name="edit_abilities">Edit Abilities</string>
+    <string name="ability">Ability</string>
+    <string name="comments">Comments</string>
+    <string name="task">Task</string>
+    <string name="edit_ability">Edit ability</string>
+    <string name="delete_ability">Delete ability</string>
+    <string name="are_you_sure_you_want_to_delete_this_ability">Are you sure you want to delete this ability?</string>
+    <string name="select_task">Select task</string>
+    <string name="can_independently_perform_task">Can independently perform task</string>
+    <string name="can_partly_perform_task">Can partly perform task</string>
+    <string name="needs_help_performing_task">Needs help performing task</string>
+
+    <!--Medications-->
+    <string name="medications">Medications</string>
+    <string name="medications_">Medications:</string>
+    <string name="no_medications">No Medications Data Available</string>
+    <string name="add_medications">Add medications</string>
+    <string name="add_medications_">Add Medications</string>
+    <string name="edit_medications_">Edit Medications</string>
+    <string name="medication_name">Medication Name</string>
+    <string name="route">Route</string>
+    <string name="dose">Dose</string>
+    <string name="additional_dose_info">Additional dose info</string>
+    <string name="additional_route_info">Additional route info</string>
+    <string name="frequency">Frequency</string>
+    <string name="dose_unit">Dose unit</string>
+    <string name="mg">mg</string>
+    <string name="mg_ml">mg/ml</string>
+    <string name="mcg_ml">mcg/ml</string>
+    <string name="u_ml">U/ml</string>
+    <string name="other">Other</string>
+    <string name="select_route">Select route</string>
+    <string name="oral">Oral</string>
+    <string name="injection">Injection</string>
+    <string name="ocular">Ocular</string>
+    <string name="otic">Otic</string>
+    <string name="edit_medication">Edit medication</string>
+    <string name="delete_medication">Delete medication</string>
+    <string name="are_you_sure_you_want_to_delete_this_medication">Are you sure you want to delete this medication?</string>
+
+    <!--Conditions-->
+    <string name="conditions">Conditions</string>
+    <string name="conditions_">Conditions:</string>
+    <string name="no_conditions">No Conditions Data Available</string>
+    <string name="add_conditions">Add Conditions</string>
+    <string name="condition">Condition</string>
+    <string name="symptoms">Symptoms</string>
+    <string name="management">Management</string>
+    <string name="additional_comments">Additional Comments</string>
+    <string name="edit_conditions">Edit Conditions</string>
+    <string name="edit_condition">Edit condition</string>
+    <string name="delete_condition">Delete Condition</string>
+    <string name="are_you_sure_you_want_to_delete_this_condition">Are you sure you want to delete this condition?</string>
+
+    <!--Records-->
+    <string name="records">Records</string>
+    <string name="records_">Records:</string>
+    <string name="no_records_available">No Records Data Available</string>
+    <string name="take_picture_of_record">Take picture of record</string>
+    <string name="document_name">Document Name</string>
+    <string name="pages_in_document">Pages in document</string>
+    <string name="add_records">Add Records</string>
+    <string name="edit_records">Edit Records</string>
+    <string name="edit_record">Edit record</string>
+    <string name="delete_record">Delete records</string>
+    <string name="are_you_sure_you_want_to_delete_this_record">Are you sure you want to delete this record?</string>
+
+    <!--Summary-->
+    <string name="summary">Summary</string>
+    <string name="medications_summary">Medications Summary</string>
+
+    <!--Validations-->
+    <string name="are_you_sure_you_want_to_delete">Are you sure you want to delete?</string>
+    <string name="you_reached_three_users_limit">You have reached the maximum of 3 logins in this device.</string>
+    <string name="email_is_already_registered">Email is already registered!</string>
+    <string name="we_cant_find_requested_user">We can\'t find requested User!</string>
+    <string name="password_is_incorrect">Password is incorrect!</string>
+    <string name="gmail_not_installed">Gmail is not installed</string>
+    <string name="storage_permission_required">Storage permission required to generate pdf file!</string>
+    <string name="network_error">Oops, the internet is not working. Please check the connection and try again.</string>
+    <string name="error_user_not_found">ERROR_USER_NOT_FOUND</string>
+
+    <string name="terms_and_conditions_text"><![CDATA[
+        <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="LibreOffice 4.1.6.2 (Linux)">
+	<META NAME="CREATED" CONTENT="20200918;12600000000000">
+	<META NAME="CHANGED" CONTENT="20200918;12600000000000">
+	<META NAME="AppVersion" CONTENT="16.0000">
+	<META NAME="DocSecurity" CONTENT="0">
+	<META NAME="HyperlinksChanged" CONTENT="false">
+	<META NAME="LinksUpToDate" CONTENT="false">
+	<META NAME="ScaleCrop" CONTENT="false">
+	<META NAME="ShareDoc" CONTENT="false">
+	<STYLE TYPE="text/css">
+	<!—
+		@page { size: 8.5in 11in; margin-left: 0.75in; margin-right: 0.75in; margin-top: 0.5in; margin-bottom: 0.5in }
+		P { margin-bottom: 0.08in; direction: ltr; line-height: 100%; widows: 2; orphans: 2 }
+		P.western { font-family: "Times New Roman", serif; font-size: 12pt }
+		P.cjk { font-size: 12pt }
+		P.ctl { font-family: "Times New Roman"; font-size: 12pt }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="en-US" DIR="LTR">
+<DIV TYPE=HEADER>
+	<P STYLE="margin-bottom: 0.46in"><BR>
+	</P>
+</DIV>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in"><FONT SIZE=3 STYLE="font-size: 11pt"><U><B>DISCLAIMER</B></U></FONT></P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in"><FONT SIZE=3 STYLE="font-size: 11pt"><B>THIS
+APPLICATION IS MADE AVAILABLE BY THE JOHNS HOPKINS UNIVERSITY (“JHU”)
+AND KENNEDY KRIEGER INSTITUTE (“KKI”) SOLELY FOR PERSONAL,
+NON-COMMERCIAL, TEACHING OR EDUCATIONAL USE. THIS APPLICATION IS NOT
+A MEDICAL DEVICE AND DOES NOT AND SHOULD NOT BE CONSTRUED TO PROVIDE
+HEALTH-RELATED OR MEDICAL ADVICE, OR CLINICAL DECISION SUPPORT, OR TO
+SUPPORT OR REPLACE THE DIAGNOSIS, RECOMMENDATION, ADVICE, TREATMENT,
+OR DECISION BY AN APPROPRIATELY TRAINED AND LICENSED PHYSICIAN,
+INCLUDING, WITHOUT LIMITATION, WITH RESPECT TO ANY LIFE SUSTAINING OR
+LIFE SAVING TREATMENT OR DECISION.  THIS APPLICATION COMES WITH NO
+WARRANTIES, EXPRESS OR IMPLIED.  USER ACCEPTS ALL RISK FROM OPERATING
+THIS PROGRAM, INCLUDING THE RISK THAT INFORMATION STORED BY OR USED
+BY THIS PROGRAM MAY BE ACCESSED BY UNAUTHORIZED PARTIES.  DATA STORED
+BY THIS APPLICATION IS NOT ENCRYPTED.  THIS APPLICATION DOES NOT
+CREATE A PHYSICIAN-PATIENT RELATIONSHIP BETWEEN JHU AND ANY
+INDIVIDUAL.  BY PURCHASING, DOWNLOADING, ACCESSING, VIEWING AND/OR
+USING THE APPLICATION, YOU, THE USER, AGREE TO USE THE APPLICATION
+SOLELY IN ACCORDANCE WITH THE FOREGOING AND ALL OF THE TERMS AND
+CONDITIONS OF THE END-USER LICENSE AGREEMENT BETWEEN YOU AND JHU.    </B></FONT>
+</P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in"><BR>
+</P>
+<P CLASS="western" ALIGN=CENTER STYLE="margin-bottom: 0in"><FONT SIZE=3 STYLE="font-size: 11pt"><U><B>End-User
+License Agreement</B></U></FONT><FONT SIZE=3 STYLE="font-size: 11pt"><U><BR></U></FONT><BR>
+</P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.25in; margin-bottom: 0in">
+<FONT SIZE=3 STYLE="font-size: 11pt">This End-User License Agreement
+(the “</FONT><FONT SIZE=3 STYLE="font-size: 11pt"><I>Agreement</I></FONT><FONT SIZE=3 STYLE="font-size: 11pt">”)
+is between you (“</FONT><FONT SIZE=3 STYLE="font-size: 11pt"><I>User</I></FONT><FONT SIZE=3 STYLE="font-size: 11pt">”)
+and The Johns Hopkins University, a Maryland non-stock non-profit
+corporation, and the Kennedy Krieger Institute, a Maryland non-stock
+non-profit corporation (collectively, “</FONT><FONT SIZE=3 STYLE="font-size: 11pt"><I>JHU/KKI</I></FONT><FONT SIZE=3 STYLE="font-size: 11pt">”).
+ By purchasing, downloading, accessing, viewing and/or using
+Important Information About Me (“</FONT><FONT SIZE=3 STYLE="font-size: 11pt"><I>IIAM</I></FONT><FONT SIZE=3 STYLE="font-size: 11pt">”
+or the “</FONT><FONT SIZE=3 STYLE="font-size: 11pt"><I>Application</I></FONT><FONT SIZE=3 STYLE="font-size: 11pt">”),
+User acknowledges that User has read and understands this Agreement
+in its entirety, and hereby accepts and agrees to be bound by all of
+its terms and conditions.  With respect to this Agreement, the term
+“</FONT><FONT SIZE=3 STYLE="font-size: 11pt"><I>Application</I></FONT><FONT SIZE=3 STYLE="font-size: 11pt">”
+includes all data, information, functions, calculations, and other
+content in, on, output from or performed by the Application,
+including, without limitation, all educational, literary, and
+scientific materials, programs, codes, user interfaces and other
+software, audio and video content, text, illustrations, photographs,
+designs, marks and logos, in, on, output from or performed by the
+Application.  </FONT>
+</P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in"><BR>
+</P>
+<OL>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><FONT FACE="Times New Roman, serif"><FONT SIZE=3 STYLE="font-size: 11pt"><B>License</B></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3 STYLE="font-size: 11pt">.
+	 Upon User’s payment of the required fees, if any, and acceptance
+	of all of the terms and conditions herein, User is granted a
+	limited, non-exclusive and non-transferable license (“</FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3 STYLE="font-size: 11pt"><I>License</I></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3 STYLE="font-size: 11pt">”)
+	to download the Application on one device that User owns or controls
+	for use solely in accordance with this Agreement.  User acknowledges
+	that the Application is intended solely for personal,
+	non-commercial, teaching or educational use in accordance with this
+	Agreement and hereby agrees that the Application will be used solely
+	for such purpose.  If User is an entity, User hereby agrees that it
+	shall restrict access to and use of the Application solely to User’s
+	employees who meet the criteria for use of the Application that are
+	set forth herein.  User shall ensure that any individual permitted
+	by User to access, view and/or use the Application is aware of,
+	accepts and will comply with the provisions of this Agreement, and
+	User hereby agrees to the terms and conditions of this Agreement on
+	behalf of all such individuals.  User assumes full responsibility
+	for insuring that the Application is used solely in accordance with
+	this Agreement.     </FONT></FONT></FONT></FONT>
+	</P>
+</OL>
+<P ALIGN=JUSTIFY STYLE="margin-left: 0.25in; margin-bottom: 0in; line-height: 100%">
+<BR>
+</P>
+<OL START=2>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><FONT FACE="Times New Roman, serif"><FONT SIZE=3 STYLE="font-size: 11pt"><B>No
+	Medical Advice</B></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3 STYLE="font-size: 11pt">.
+	 User acknowledges that the Application does not and should not be
+	construed to provide health-related or medical advice, or clinical
+	decision support, or to provide, support or replace any diagnosis,
+	recommendation, advice, treatment or decision by an appropriately
+	trained and licensed physician, or to create a patient-physician
+	relationship, and further acknowledges that the Application is not a
+	medical device and is not designed, intended, or authorized for use
+	as a medical device, including, without limitation, in or for any
+	life sustaining or life-saving treatment, decision or system.  User
+	hereby agrees that the Application will not be relied on or used, in
+	whole or in part, for any of the preceding purposes by or on behalf
+	of User with respect to any individual(s).</FONT></FONT></FONT></FONT></P>
+</OL>
+<P ALIGN=JUSTIFY STYLE="margin-left: 0.5in; margin-bottom: 0in; line-height: 100%">
+<BR>
+</P>
+<OL START=3>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><FONT FACE="Times New Roman, serif"><FONT SIZE=3 STYLE="font-size: 11pt"><B>Intellectual
+	Property</B></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3 STYLE="font-size: 11pt">.
+	 User hereby agrees that the Application contains proprietary
+	information and material that is owned by JHU/KKI and is protected
+	by applicable intellectual property and other laws, including,
+	without limitation, copyright laws.  The Application is licensed,
+	not sold, to User for use solely in accordance with this Agreement,
+	and JHU/KKI does not transfer any ownership rights in the
+	Application to User and hereby reserves all rights not expressly
+	granted to User.  User hereby agrees not to use, promote, advertise,
+	market, publish, transfer, distribute, rent, license, sell, copy,
+	modify, create derivative works from, or use in a time-sharing
+	arrangement, the Application, or any copy thereof, in whole or in
+	part, except as expressly provided in this Agreement.  User hereby
+	agrees not to reverse engineer, disassemble, decompile, translate,
+	modify, violate, circumvent or otherwise tamper with the
+	Application, or otherwise attempt to derive the source code of any
+	of the Application’s software.  User hereby agrees not to develop,
+	distribute or sell applications that are capable of launching, being
+	launched from, or are otherwise integrated with, the Application.
+	User hereby agrees not to use and is granted no license or right
+	with respect to any current or future </FONT></FONT><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3 STYLE="font-size: 11pt">sign,
+	logo, mascot, insignia, slogan, trade name, trademark, or service
+	mark of </FONT></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3 STYLE="font-size: 11pt">JHU/KKI</FONT></FONT><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3 STYLE="font-size: 11pt">,
+	or any of their affiliates,</FONT></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3 STYLE="font-size: 11pt">
+	in whole or in part, for any purpose, including, without limitation,
+	</FONT></FONT><FONT COLOR="#000000"><FONT FACE="Times New Roman, serif"><FONT SIZE=3 STYLE="font-size: 11pt">any</FONT></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3 STYLE="font-size: 11pt">
+	marketing, advertising, publicity or promotion in connection with
+	the Application or otherwise.  </FONT></FONT></FONT></FONT>
+	</P>
+</OL>
+<P ALIGN=JUSTIFY STYLE="margin-left: 0.5in; margin-bottom: 0in; line-height: 100%">
+<BR>
+</P>
+<OL START=4>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><FONT FACE="Times New Roman, serif"><FONT SIZE=3 STYLE="font-size: 11pt"><B>Disclaimer
+	of Warranties and User’s Assumption of Risk</B></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3 STYLE="font-size: 11pt">.
+	 </FONT></FONT></FONT></FONT>
+	</P>
+</OL>
+<P ALIGN=JUSTIFY STYLE="margin-left: 0.5in; margin-bottom: 0in; line-height: 100%">
+<BR>
+</P>
+<OL>
+	<OL TYPE=a>
+		<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><FONT FACE="Times New Roman, serif"><FONT SIZE=3 STYLE="font-size: 11pt">USER
+		HEREBY AGREES THAT THE USE OF OR INABILITY TO USE, OR RELIANCE ON,
+		THE APPLICATION BY OR ON BEHALF OF USER IS AT USER’S SOLE RISK.
+		USER ACKNOWLEDGES THAT THE APPLICATION IS PROVIDED ON AN “AS IS”
+		AND “AS AVAILABLE” BASIS. &nbsp;JHU/KKI MAKES NO GUARANTEES,
+		REPRESENTATIONS OR WARRANTIES WHATSOEVER, AND TO THE FULLEST EXTENT
+		PERMITTED BY LAW, EXPRESSLY DISCLAIMS ALL REPRESENTATIONS AND
+		WARRANTIES, EXPRESS OR IMPLIED OR STATUTORY, WITH RESPECT TO THE
+		APPLICATION, INCLUDING, WITHOUT LIMITATION, REPRESENTATIONS AND
+		WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
+		TITLE AND NON-INFRINGEMENT OF THIRD-PARTY RIGHTS, QUIET ENJOYMENT,
+		QUALITY, RELIABILITY, ACCURACY, TIMELINESS, USEFULNESS,
+		COMPLETENESS, SUITABILITY, SATISFACTORY QUALITY, SECURITY AND/OR
+		FUNCTIONALITY. &nbsp;JHU/KKI MAKES NO GUARANTEES, REPRESENTATIONS
+		OR WARRANTIES, EXPRESS OR IMPLIED, THAT THE USE OF THE APPLICATION
+		WILL BE ERROR FREE OR UNINTERRUPTED OR THAT THE APPLICATION WILL BE
+		FREE FROM LOSS, CORRUPTION, INTERFERENCE, HACKING, ATTACK, VIRUSES,
+		OR OTHER SECURITY INTRUSION.  JHU/KKI HEREBY SPECIFICALLY DISCLAIMS
+		ANY LIABILITY RELATING TO THE FOREGOING AND USER HEREBY ASSUMES AND
+		BEARS THE ENTIRE RISK WITH RESPECT THERETO.  BECAUSE SOME
+		JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF IMPLIED WARRANTIES,
+		PORTIONS OF THE ABOVE EXCLUSIONS MAY NOT APPLY TO USER.  IN SUCH
+		JURISDICTIONS, THE DURATION AND SCOPE OF THE APPLICABLE WARRANTY
+		WILL BE THE MINIMUM PERMITTED UNDER APPLICABLE LAW.  </FONT></FONT></FONT></FONT>
+		</P>
+	</OL>
+</OL>
+<P ALIGN=JUSTIFY STYLE="margin-left: 0.5in; margin-bottom: 0in; line-height: 100%">
+<BR>
+</P>
+<OL>
+	<OL TYPE=a START=2>
+		<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><FONT FACE="Times New Roman, serif"><FONT SIZE=3 STYLE="font-size: 11pt">User
+		acknowledges that updates to the Application are at the sole
+		discretion of JHU/KKI and that JHU/KKI undertakes no obligation to
+		supplement or update the Application.  JHU/KKI makes no guarantees,
+		representations or warranties whatsoever, express or implied, with
+		respect to the compatibility of the Application, or future releases
+		thereof, if any, with any hardware or software, or with respect to
+		the continuity of the features or facilities provided by or through
+		the Application as between various releases thereof, if any.</FONT></FONT></FONT></FONT></P>
+	</OL>
+</OL>
+<P ALIGN=JUSTIFY STYLE="margin-left: 0.5in; margin-bottom: 0in; line-height: 100%">
+<BR>
+</P>
+<OL>
+	<OL TYPE=a START=3>
+		<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><FONT FACE="Times New Roman, serif"><FONT SIZE=3 STYLE="font-size: 11pt">JHU/KKI
+		SHALL NOT BE LIABLE TO USER FOR ANY COSTS, EXPENSES, LIABILITIES,
+		PENALTIES, FINES, LOSSES, DAMAGES, DEMANDS, THIRD-PARTY CLAIMS,
+		JUDGMENTS AND/OR OTHER FORMS OF LIABILITY, WHETHER ARISING FROM
+		PERSONAL OR BODILY INJURY, ILLNESS, OR DEATH, OR TANGIBLE OR
+		INTANGIBLE PROPERTY DAMAGE OR LOSS, OR OTHERWISE (COLLECTIVELY,
+		“</FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3 STYLE="font-size: 11pt"><I>CLAIMS</I></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3 STYLE="font-size: 11pt">”)
+		IN CONNECTION WITH, ARISING OUT OF OR RELATING TO: &nbsp;(A) ANY
+		USE OF OR INABILITY TO USE, OR RELIANCE ON, THE APPLICATION BY OR
+		ON BEHALF OF USER; (B) ANY MISSTATEMENTS, INACCURACIES, ERRORS,
+		OMISSIONS, DELAYS OR INTERRUPTIONS IN CONNECTION WITH THE
+		APPLICATION; AND/OR (C) ANY DIAGNOSIS, RECOMMENDATION, ADVICE,
+		TREATMENT, PROCEDURE OR OTHER ACTION BY OR ON BEHALF OF USER IN
+		CONNECTION WITH VIEWING, USING OR RELYING ON THE APPLICATION WITH
+		RESPECT TO ANY INDIVIDUAL(S), REGARDLESS OF THE LEGAL BASIS FOR THE
+		CLAIM(S).  USER HEREBY ASSUMES AND BEARS THE ENTIRE RISK WITH
+		RESPECT TO THE FOREGOING, AND TO THE FULLEST EXTENT PERMITTED BY
+		LAW, RELEASES JHU/KKI AND EACH JHU/KKI MEMBER (AS HEREINAFTER
+		DEFINED) FROM ANY LIABILITY RELATING TO THE FOREGOING.  </FONT></FONT></FONT></FONT>
+		</P>
+	</OL>
+</OL>
+<P ALIGN=JUSTIFY STYLE="margin-left: 0.5in; margin-bottom: 0in; line-height: 100%">
+<BR>
+</P>
+<OL>
+	<OL TYPE=a START=4>
+		<LI><P ALIGN=JUSTIFY STYLE="margin-top: 0.17in; margin-bottom: 0in; line-height: 100%">
+		<FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><FONT FACE="Times New Roman, serif"><FONT SIZE=3 STYLE="font-size: 11pt">Data
+		stored by or generated by IIAM is unencrypted.  User hereby
+		acknowledges that IIAM stores data in a manner that may be accessed
+		by unauthorized parties.  By way of non-exhaustive example, access
+		may be achieved by using the “Photos” or “Calendar” apps on
+		the User’s iPhone or iPad containing IIAM data.  These and other
+		applications with such data may be accessed with or without user
+		permission and with or without a password.  For the avoidance of
+		doubt and not in limitation of any of the foregoing, User hereby
+		accepts such risks.</FONT></FONT></FONT></FONT></P>
+	</OL>
+</OL>
+<P ALIGN=JUSTIFY STYLE="margin-left: 0.75in; margin-bottom: 0in; line-height: 100%">
+<BR>
+</P>
+<OL START=5>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><FONT FACE="Times New Roman, serif"><FONT SIZE=3 STYLE="font-size: 11pt"><B>Indemnification</B></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3 STYLE="font-size: 11pt">.
+	 USER HEREBY AGREES TO DEFEND, INDEMNIFY AND HOLD JHU/KKI AND ITS
+	AFFILIATES AND EACH OF THEIR OFFICERS, TRUSTEES, EMPLOYEES,
+	STUDENTS, REPRESENTATIVES AND AGENTS (COLLECTIVELY, “</FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3 STYLE="font-size: 11pt"><I>JHU/KKI</I></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3 STYLE="font-size: 11pt">
+	</FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3 STYLE="font-size: 11pt"><I>MEMBERS</I></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3 STYLE="font-size: 11pt">”)
+	HARMLESS FROM AND AGAINST ANY AND ALL CLAIMS, ACTIONS, SUITS OR
+	PROCEEDINGS, INCLUDING, WITHOUT LIMITATION, REASONABLE ATTORNEYS’
+	FEES, IN CONNECTION WITH, ARISING OUT OF OR RELATING TO:  (A) THE
+	PURCHASE, DOWNLOADING, ACCESS, VIEWING, USE OF OR INABILITY TO USE,
+	OR RELIANCE ON, THE APPLICATION BY OR ON BEHALF OF USER; AND/OR (B)
+	USER’S BREACH OF ANY OF THE TERMS AND CONDITIONS HEREIN.</FONT></FONT></FONT></FONT></P>
+</OL>
+<P ALIGN=JUSTIFY STYLE="margin-left: 0.25in; margin-bottom: 0in; line-height: 100%">
+<BR>
+</P>
+<OL START=6>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><FONT FACE="Times New Roman, serif"><FONT SIZE=3 STYLE="font-size: 11pt"><B>Limitation
+	of Liability</B></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3 STYLE="font-size: 11pt">.
+	 IN NO EVENT SHALL JHU/KKI BE LIABLE TO USER OR ANY THIRD-PARTY FOR
+	ANY SPECIAL, INCIDENTAL, CONSEQUENTIAL, PUNITIVE OR INDIRECT DAMAGES
+	IN CONNECTION WITH, ARISING OUT OF, OR RELATING TO THIS AGREEMENT OR
+	THE APPLICATION EVEN IF JHU/KKI HAS BEEN ADVISED OF THE POSSIBILITY
+	OF SUCH DAMAGES.  BECAUSE SOME JURISDICTIONS DO NOT ALLOW THE
+	EXCLUSION OF OR LIMITATION OF LIABILITY FOR CERTAIN TYPES OF
+	DAMAGES, IN SUCH JURISDICTIONS, JHU/KKI’S LIABILITY SHALL BE
+	LIMITED TO THE EXTENT PERMITTED BY LAW.  NOTWITHSTANDING ANYTHING TO
+	THE CONTRARY HEREIN, UNDER NO CIRCUMSTANCES WILL JHU/KKI BE LIABLE
+	TO USER OR ANY THIRD-PARTY FOR ANY REASON FOR ANY AMOUNT IN EXCESS
+	OF THE GREATER OF:  (A) FIFTY UNITED STATES DOLLARS (US $50); AND
+	(B) THE TOTAL FEES PAID BY USER TO JHU/KKI UNDER THIS AGREEMENT
+	(REGARDLESS OF THE LEGAL BASIS FOR THE CLAIM(S)).    </FONT></FONT></FONT></FONT>
+	</P>
+</OL>
+<P ALIGN=JUSTIFY STYLE="margin-left: 0.5in; margin-bottom: 0in; line-height: 100%">
+
+</P>
+<OL START=7>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><FONT FACE="Times New Roman, serif"><FONT SIZE=3 STYLE="font-size: 11pt"><B>Term;
+	Termination</B></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3 STYLE="font-size: 11pt">.
+	 This Agreement shall remain in effect only for so long as User is
+	in compliance with the terms and conditions hereof.  This Agreement
+	and the License will terminate automatically without notice from
+	JHU/KKI if User fails to comply with or breaches any term(s) and
+	condition(s) of this Agreement.  Upon termination of this Agreement,
+	User shall cease all use of the Application and destroy all copies,
+	full or partial, of the Application. JHU/KKI reserves the right to
+	modify, suspend, discontinue or disable access to the Application
+	(or any part or content thereof), and may impose limits on the use
+	of or access to certain features or portions of the Application, at
+	any time with or without notice to User, and JHU/KKI will not be
+	liable to User or to any third-party should it exercise such rights.
+	   </FONT></FONT></FONT></FONT>
+	</P>
+</OL>
+<P ALIGN=JUSTIFY STYLE="margin-left: 0.5in; margin-bottom: 0in; line-height: 100%">
+<BR>
+</P>
+<OL START=8>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><FONT FACE="Times New Roman, serif"><FONT SIZE=3 STYLE="font-size: 11pt"><B>Agreement</B></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3 STYLE="font-size: 11pt">.
+	 This Agreement constitutes the entire agreement between User and
+	JHU/KKI regarding the subject matter hereof and supersedes all
+	previous oral or written communications, proposals, agreements and
+	representations, if any, relating to the subject matter hereof.
+	JHU/KKI reserves the right to modify this Agreement and to impose
+	new or additional terms or conditions on the access, viewing and use
+	of the Application at any time and in its sole discretion. Such
+	modifications and additional terms and conditions will be effective
+	immediately and incorporated into this Agreement. The continued use
+	of the Application by or on behalf of User will be deemed acceptance
+	thereof. The failure of any party to require the performance of any
+	term or obligation of this Agreement, or the waiver by any party of
+	any breach of this Agreement, will not act as a bar to subsequent
+	enforcement of such term or obligation or be deemed a waiver of any
+	subsequent breach.  The provisions of this Agreement will be
+	considered severable, so that the invalidity or unenforceability of
+	any provisions will not affect the validity or enforceability of the
+	remaining provisions; provided that no such severability will be
+	effective if it materially changes the agreement contained herein.
+	Neither this Agreement nor any rights or obligations of User
+	hereunder may be assigned or delegated by User in whole or in part
+	without the prior written approval of JHU/KKI. Any assignment or
+	delegation in derogation of the foregoing shall be null and void.
+	The headings contained in this Agreement are for reference purposes
+	only and will not affect in any way the meaning and interpretation
+	of this Agreement.  All terms and conditions that by their nature
+	should survive the termination or expiration of this Agreement,
+	including, without limitation, Sections 3, 4, 5 and 6 hereof, will
+	survive.  User hereby agrees that User will not use or otherwise
+	export the Application in violation or prohibition of United States
+	and any other applicable laws, statutes and regulations.  </FONT></FONT></FONT></FONT>
+	</P>
+</OL>
+<P ALIGN=JUSTIFY STYLE="margin-left: 0.75in; margin-bottom: 0in; line-height: 100%">
+<BR>
+</P>
+<OL START=9>
+	<LI><P ALIGN=JUSTIFY STYLE="margin-bottom: 0in; line-height: 100%"><FONT FACE="Calibri, serif"><FONT SIZE=2 STYLE="font-size: 11pt"><FONT FACE="Times New Roman, serif"><FONT SIZE=3 STYLE="font-size: 11pt"><B>Governing
+	Law and Jurisdiction; Waiver of Trial by Jury</B></FONT></FONT><FONT FACE="Times New Roman, serif"><FONT SIZE=3 STYLE="font-size: 11pt">.
+	 The validity, construction and enforcement of this Agreement, and
+	the use of the Application, will be determined in accordance with
+	the laws of the State of Maryland, without reference to its
+	conflicts of laws principles.  User and JHU/KKI hereby irrevocably
+	and unconditionally:  (i) consent to submit to the exclusive
+	jurisdiction of the courts of the State of Maryland for any
+	proceeding arising in connection with this Agreement and each such
+	party agrees not to commence any such proceeding except in such
+	courts, and (ii) waives any objection to the laying of venue of any
+	such proceeding in the courts of the State of Maryland.  EACH OF
+	JHU/KKI AND USER, KNOWINGLY AND AFTER CONSULTATION WITH COUNSEL, FOR
+	ITSELF, ITS SUCCESSORS AND ASSIGNS, WAIVES ALL RIGHT TO TRIAL BY
+	JURY OF ANY CLAIM ARISING WITH RESPECT TO THIS AGREEMENT OR ANY
+	MATTER RELATED IN ANY WAY THERETO.</FONT></FONT></FONT></FONT></P>
+</OL>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0in"><FONT SIZE=3 STYLE="font-size: 11pt"><BR></FONT><FONT SIZE=3 STYLE="font-size: 11pt"><B>BY
+PURCHASING, DOWNLOADING, ACCESSING, VIEWING AND/OR USING THE
+APPLICATION, USER ACKNOWLEDGES THAT USER HAS READ AND UNDERSTANDS
+THIS AGREEMENT IN ITS ENTIRETY, AND HEREBY ACCEPTS AND AGREES TO BE
+BOUND BY ALL OF THE TERMS AND CONDITIONS SET FORTH HEREIN.  </B></FONT>
+</P>
+<P CLASS="western" ALIGN=JUSTIFY STYLE="text-indent: 0.5in; margin-bottom: 0in">
+<BR>
+</P>
+<DIV TYPE=FOOTER>
+	<P STYLE="margin-top: 0.46in; margin-bottom: 0in"><BR>
+	</P>
+</DIV>
+</BODY>
+</HTML>
+    ]]></string>
+
+</resources>

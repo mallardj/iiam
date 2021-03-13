@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDarkNavyBlue"
+    android:orientation="vertical"
+    tools:context=".aboutme.AboutMeActivity">
+
+    <include layout="@layout/toolbar_home" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/lDataAboutMe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_white_top_corners"
+        android:overScrollMode="never"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/_20sdp"
+            android:paddingBottom="@dimen/_10sdp">
+
+            <LinearLayout
+                android:id="@+id/llAboutMeBio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/tvMePhoto"
+                    android:layout_width="@dimen/_110sdp"
+                    android:layout_height="@dimen/_110sdp"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:src="@drawable/ic_dummy_image" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvMeName"
+                    style="@style/TextViewStyleBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:textColor="@color/colorLightNavyBlue"
+                    android:textSize="@dimen/_20ssp"
+                    tools:text="@string/andrea_james" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.5"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/TextViewStyleBold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/age"
+                            android:textColor="@color/colorGreenBlue"
+                            android:textSize="@dimen/_12ssp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tvMeAge"
+                                style="@style/TextViewStyleMedium"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorLightNavyBlue"
+                                android:textSize="@dimen/_16ssp"
+                                tools:text="26" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                style="@style/TextViewStyleMedium"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_2sdp"
+                                android:text="@string/yrs"
+                                android:textColor="@color/colorLightNavyBlue"
+                                android:textSize="@dimen/_10ssp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_marginBottom="@dimen/_3sdp"
+                        android:background="@color/colorHint" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.5"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            style="@style/TextViewStyleBold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/gender"
+                            android:textColor="@color/colorGreenBlue"
+                            android:textSize="@dimen/_12ssp" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvMeGender"
+                            style="@style/TextViewStyleMedium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorLightNavyBlue"
+                            android:textSize="@dimen/_16ssp"
+                            tools:text="Female" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/TextViewStyleBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:text="@string/allergies"
+                    android:textColor="@color/colorGreenBlue"
+                    android:textSize="@dimen/_12ssp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvMeAllergies"
+                    style="@style/TextViewStyleMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:textColor="@color/colorLightNavyBlue"
+                    android:textSize="@dimen/_16ssp"
+                    tools:text="Penicillin, Sulfa drugs" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_3sdp"
+                    android:background="@color/colorHint" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvNotesTitle"
+                style="@style/TextViewStyleBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:text="@string/notes"
+                android:textColor="@color/colorGreenBlue"
+                android:textSize="@dimen/_14ssp"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvNotes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_11sdp"
+                android:layout_marginEnd="@dimen/_11sdp"
+                android:clipToPadding="false"
+                android:nestedScrollingEnabled="false"
+                android:overScrollMode="never"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:scrollbars="vertical"
+                android:visibility="gone"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_notes" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:id="@+id/lNoDataAboutMe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_white_top_corners"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/_20sdp"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/ivNoData"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:src="@drawable/ic_no_data" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvNoData"
+            style="@style/TextViewStyleBold"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/no_data_available"
+            android:textColor="@color/colorBrown"
+            android:textSize="@dimen/_16ssp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDesc"
+            style="@style/TextViewStyleMedium"
+            android:layout_below="@+id/tvNoData"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:gravity="center"
+            android:text="@string/lorem_ipsum_dummy_text"
+            android:textColor="@color/colorLightBrown"
+            android:textSize="@dimen/_10ssp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/ivAddData"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:src="@drawable/ic_add_data" />
+
+    </RelativeLayout>
+
+</LinearLayout>

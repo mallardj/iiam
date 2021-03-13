@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_navigation"
+    android:padding="@dimen/_20sdp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/tvUserPhoto"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:src="@drawable/ic_dummy_image" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvUserName"
+        style="@style/TextViewStyleBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvUserPhoto"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="2"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/_16ssp"
+        tools:text="@string/andrea_james" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvHeaderItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvUserName"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:clipToPadding="false"
+        android:overScrollMode="never" />
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llNavigation"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:layout_marginBottom="@dimen/_5sdp"
+    android:background="@drawable/selector_nav_item"
+    android:orientation="horizontal"
+    android:paddingStart="@dimen/_8sdp"
+    android:paddingTop="@dimen/_8sdp"
+    android:paddingEnd="@dimen/_8sdp"
+    android:paddingBottom="@dimen/_8sdp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivNavigation"
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="@dimen/_18sdp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvNavigation"
+        style="@style/TextViewStyleRegular"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:textColor="@drawable/selector_nav_text"
+        android:textSize="@dimen/_13ssp" />
+
+</LinearLayout>

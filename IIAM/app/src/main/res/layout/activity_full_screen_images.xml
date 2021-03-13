@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".fullscreenimage.FullScreenImagesActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/autoPagerImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabImage"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_16sdp"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:background="@drawable/tab_background"
+            android:paddingStart="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_5ssp"
+            android:visibility="gone"
+            app:tabBackground="@drawable/viewpager_tab_selector"
+            app:tabGravity="center"
+            app:tabIndicatorHeight="0dp"
+            app:tabMaxWidth="@dimen/_10sdp" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/ivClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/cancel"
+        android:padding="@dimen/_16sdp"
+        android:src="@drawable/ic_close"
+        android:visibility="visible" />
+
+</RelativeLayout>
