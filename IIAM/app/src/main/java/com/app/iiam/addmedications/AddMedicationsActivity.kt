@@ -314,6 +314,41 @@ class AddMedicationsActivity : BaseActivity(), PhotoPickerFragment.Callback, Med
             .placeholder(R.drawable.ic_add_picture)
             .centerCrop()
             .into(tvAddPicture)
+        try {
+            image = InputImage.fromFilePath(context, uri)
+            val image = InputImage.fromByteBuffer(
+                byteBuffer,
+                /* image width */ 480,
+                /* image height */ 360,
+                rotationDegrees,
+                InputImage.IMAGE_FORMAT_NV21 // or IMAGE_FORMAT_YV12
+            )
+            val recognizer = TextRecognition.getClient()
+            val result = recognizer.process(image)
+                .addOnSuccessListener { visionText ->
+                    for (block in visionText.textBlocks) {
+                        val blockText = block.text
+                        val blockCornerPoints = block.cornerPoints
+                        val blockFrame = block.boundingBox
+                        for (line in block.lines) {
+                            val lineText = line.text
+                            val lineCornerPoints = line.cornerPoints
+                            val lineFrame = line.boundingBox
+                            for (element in line.elements) {
+                                val elementText = element.text
+                                val elementCornerPoints = element.cornerPoints
+                                val elementFrame = element.boundingBox
+                            }
+                        }
+                    }
+                }
+                .addOnFailureListener { e ->
+                    e.printStackTrace()
+                }
+        } catch (e: IOException) {
+            e.printStackTrace()
+        }
+        
     }
 
     override fun onBackPressed() {
