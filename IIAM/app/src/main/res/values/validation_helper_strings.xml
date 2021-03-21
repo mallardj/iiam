@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!--validation message templates-->
-    <string name="validation_required_field">Please enter %1$s.</string>
-    <string name="validation_invalid_field">Please enter valid %1$s.</string>
+    <string name="validation_required_field">Please enter the %1$s.</string>
+    <string name="validation_invalid_field">Please enter a valid %1$s.</string>
     <string name="validation_min_length">%1$s must contain at least %2$d characters.</string>
     <string name="validation_max_length">%1$s should not exceed more than %2$d characters</string>
-    <string name="validation_msg_confirm_password_and_password">Re-type Password and Password must be same</string>
-    <string name="validation_msg_new_password_and_password">New Password and Confirm New Password must be same</string>
+    <string name="validation_msg_confirm_password_and_password">The passwords do not match.</string>
+    <string name="validation_msg_new_password_and_password">The passwords do not match.</string>
     <string name="validation_exect_legth">%1$s must be %2$d digits</string>
     <string name="validation_min_digits">%1$s must contain at least %2$d digits.</string>
     <string name="validation_max_digits">%1$s should not exceed more than %2$d digits</string>
     <string name="validation_selection">Please select %1$s.</string>
-    <string name="validation_msg_email">Recipient Email and Confirm Email must be same</string>
+    <string name="validation_msg_email">The emails do not match.</string>
 
 </resources>

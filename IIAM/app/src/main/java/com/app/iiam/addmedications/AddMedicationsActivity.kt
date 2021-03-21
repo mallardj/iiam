@@ -1,11 +1,13 @@
 package com.app.iiam.addmedications
 
 import android.annotation.SuppressLint
+import android.graphics.Bitmap
 import android.net.Uri
 import android.os.Bundle
 import android.text.TextUtils
 import android.view.MotionEvent
 import android.view.View
+import android.widget.ImageView
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.app.iiam.R
@@ -18,9 +20,13 @@ import com.app.iiam.preference.SharedPrefsManager
 import com.app.iiam.utils.Const
 import com.app.iiam.utils.logInfo
 import com.bumptech.glide.Glide
+import com.bumptech.glide.request.target.BitmapImageViewTarget
+import com.google.mlkit.vision.common.InputImage
+import com.google.mlkit.vision.text.TextRecognition
 import kotlinx.android.synthetic.main.activity_add_medications.*
 import kotlinx.android.synthetic.main.toolbar_home.*
 import lv.chi.photopicker.PhotoPickerFragment
+import java.io.IOException
 import java.util.*
 
 class AddMedicationsActivity : BaseActivity(), PhotoPickerFragment.Callback, MediaBottomSheetFragment.ItemClickListener {
@@ -314,15 +320,9 @@ class AddMedicationsActivity : BaseActivity(), PhotoPickerFragment.Callback, Med
             .placeholder(R.drawable.ic_add_picture)
             .centerCrop()
             .into(tvAddPicture)
+
         try {
-            image = InputImage.fromFilePath(context, uri)
-            val image = InputImage.fromByteBuffer(
-                byteBuffer,
-                /* image width */ 480,
-                /* image height */ 360,
-                rotationDegrees,
-                InputImage.IMAGE_FORMAT_NV21 // or IMAGE_FORMAT_YV12
-            )
+            val image = InputImage.fromFilePath(baseContext,uri)
             val recognizer = TextRecognition.getClient()
             val result = recognizer.process(image)
                 .addOnSuccessListener { visionText ->
@@ -330,14 +330,17 @@ class AddMedicationsActivity : BaseActivity(), PhotoPickerFragment.Callback, Med
                         val blockText = block.text
                         val blockCornerPoints = block.cornerPoints
                         val blockFrame = block.boundingBox
+                        print(blockText)
                         for (line in block.lines) {
                             val lineText = line.text
                             val lineCornerPoints = line.cornerPoints
                             val lineFrame = line.boundingBox
+                            print(line)
                             for (element in line.elements) {
                                 val elementText = element.text
                                 val elementCornerPoints = element.cornerPoints
                                 val elementFrame = element.boundingBox
+                                print(elementText)
                             }
                         }
                     }
