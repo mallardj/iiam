@@ -330,12 +330,10 @@ class AddMedicationsActivity : BaseActivity(), PhotoPickerFragment.Callback, Med
                         val blockText = block.text
                         val blockCornerPoints = block.cornerPoints
                         val blockFrame = block.boundingBox
-                        print(blockText)
                         for (line in block.lines) {
                             val lineText = line.text
                             val lineCornerPoints = line.cornerPoints
                             val lineFrame = line.boundingBox
-                            print(line)
                             for (element in line.elements) {
                                 val elementText = element.text
                                 val elementCornerPoints = element.cornerPoints
