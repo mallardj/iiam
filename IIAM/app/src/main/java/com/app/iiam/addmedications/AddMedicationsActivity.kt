@@ -330,7 +330,7 @@ class AddMedicationsActivity : BaseActivity(), PhotoPickerFragment.Callback, Med
                         val blockCornerPoints = block.cornerPoints
                         val blockFrame = block.boundingBox
                         print("Block:")
-                        print(blockText)
+                        print(blockText + "\n")
                         for (line in block.lines) {
                             linesFound.add(line.text)
                             val lineCornerPoints = line.cornerPoints
@@ -340,21 +340,22 @@ class AddMedicationsActivity : BaseActivity(), PhotoPickerFragment.Callback, Med
 //                                val elementCornerPoints = element.cornerPoints
 //                                val elementFrame = element.boundingBox
                                 print("Element:")
-                                print(element.text)
+                                print(element.text + "\n")
 
                             }
                         }
                     }
+                    val data = ArrayList<String>(linesFound)
+                    print("This is the size I'm seeing: " + data.size + "\n")
+                    DetectedFields.data = data
+                    DetectedFields.uri = uri
+                    val intent2 = Intent(this@AddMedicationsActivity, AutofillActivity::class.java)
+                    intent2.putExtra("mylist", data)
+                    startActivity(intent2)
                 }
                 .addOnFailureListener { e ->
                     e.printStackTrace()
                 }
-            val data = ArrayList<String>(linesFound)
-            DetectedFields.data = data
-            DetectedFields.uri = uri
-            val intent = Intent(this@AddMedicationsActivity, AutofillActivity::class.java)
-            intent.putExtra("mylist", data)
-            startActivity(intent)
             overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
         } catch (e: IOException) {
             e.printStackTrace()

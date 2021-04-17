@@ -41,7 +41,7 @@ class AutofillActivity : BaseActivity() {
         listView = findViewById<ListView>(R.id.detected_list_view)
         val adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, detectedFields)
         listView.adapter = adapter
-        print("*******************************************")
+        print("*********!!!!!!!!!!!!!!!!!!!********")
         for (i in detectedFields) {
             print("I see something!")
             print(i)
