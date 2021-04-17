@@ -125,6 +125,7 @@
     <string name="needs_help_performing_task">Needs help performing task</string>
 
     <!--Medications-->
+    <string name="fields_detected">Fields Detected</string>
     <string name="medications">Medications</string>
     <string name="medications_">Medications:</string>
     <string name="no_medications">No Medications Data Available</string>
