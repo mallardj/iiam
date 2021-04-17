@@ -24,6 +24,7 @@ class Const {
         const val SUMMARY = "summary"
         const val MEDIA_TYPE = "media_type"
         const val MULTI_MEDIA = "multi_media"
+        val FIELDS = ArrayList<String>()
 
     }
 }

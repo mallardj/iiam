@@ -1,13 +1,12 @@
 package com.app.iiam.addmedications
 
 import android.annotation.SuppressLint
-import android.graphics.Bitmap
+import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.text.TextUtils
 import android.view.MotionEvent
 import android.view.View
-import android.widget.ImageView
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.app.iiam.R
@@ -20,7 +19,6 @@ import com.app.iiam.preference.SharedPrefsManager
 import com.app.iiam.utils.Const
 import com.app.iiam.utils.logInfo
 import com.bumptech.glide.Glide
-import com.bumptech.glide.request.target.BitmapImageViewTarget
 import com.google.mlkit.vision.common.InputImage
 import com.google.mlkit.vision.text.TextRecognition
 import kotlinx.android.synthetic.main.activity_add_medications.*
@@ -135,11 +133,11 @@ class AddMedicationsActivity : BaseActivity(), PhotoPickerFragment.Callback, Med
 
                 uri = Uri.parse(it.medicationsPicture)
                 Glide.with(this)
-                    .asBitmap()
-                    .load(uri)
-                    .placeholder(R.drawable.ic_add_picture)
-                    .centerCrop()
-                    .into(tvAddPicture)
+                        .asBitmap()
+                        .load(uri)
+                        .placeholder(R.drawable.ic_add_picture)
+                        .centerCrop()
+                        .into(tvAddPicture)
 
                 etMedicationName.setText(it.medicationsName)
                 etMedicationName.setSelection(etMedicationName.text.toString().trim().length)
@@ -198,64 +196,64 @@ class AddMedicationsActivity : BaseActivity(), PhotoPickerFragment.Callback, Med
         btnSubmit.setOnClickListener {
             if (TextUtils.isEmpty(etMedicationName.text.toString().trim())) {
                 showError(
-                    String.format(
-                        getString(R.string.validation_required_field),
-                        getString(R.string.medication_name).toLowerCase()
-                    )
+                        String.format(
+                                getString(R.string.validation_required_field),
+                                getString(R.string.medication_name).toLowerCase()
+                        )
                 )
             } else if (etMedicationName.text.toString().trim().length < 2) {
                 showError(
-                    String.format(
-                        getString(
-                            R.string.validation_min_length,
-                            getString(R.string.medication_name),
-                            resources.getInteger(R.integer.min_name)
+                        String.format(
+                                getString(
+                                        R.string.validation_min_length,
+                                        getString(R.string.medication_name),
+                                        resources.getInteger(R.integer.min_name)
+                                )
                         )
-                    )
                 )
             } else if (TextUtils.isEmpty(etDose.text.toString().trim())) {
                 showError(
-                    String.format(
-                        getString(R.string.validation_required_field),
-                        getString(R.string.dose).toLowerCase()
-                    )
+                        String.format(
+                                getString(R.string.validation_required_field),
+                                getString(R.string.dose).toLowerCase()
+                        )
                 )
             } else if (spDoesUnit.selectedItemPosition == 0) {
                 showError(
-                    String.format(
-                        getString(R.string.validation_selection),
-                        getString(R.string.dose_unit).toLowerCase()
-                    )
+                        String.format(
+                                getString(R.string.validation_selection),
+                                getString(R.string.dose_unit).toLowerCase()
+                        )
                 )
             } else if (spRoute.selectedItemPosition == 0) {
                 showError(
-                    String.format(
-                        getString(R.string.validation_selection),
-                        getString(R.string.route).toLowerCase()
-                    )
+                        String.format(
+                                getString(R.string.validation_selection),
+                                getString(R.string.route).toLowerCase()
+                        )
                 )
             } else if (TextUtils.isEmpty(etFrequency.text.toString().trim())) {
                 showError(
-                    String.format(
-                        getString(R.string.validation_required_field),
-                        getString(R.string.frequency).toLowerCase()
-                    )
+                        String.format(
+                                getString(R.string.validation_required_field),
+                                getString(R.string.frequency).toLowerCase()
+                        )
                 )
             } else {
                 showLoader()
                 if (isEditMedication) {
                     val thread = Thread(Runnable {
                         medicationsViewModel.updateMedications(
-                            SharedPrefsManager.getLong(Const.USER_ID),
-                            if (uri != null) uri.toString() else "",
-                            etMedicationName.text.toString().trim(),
-                            etDose.text.toString().trim(),
-                            mDoesList[spDoesUnit.selectedItemPosition],
-                            etAdditionalDoesInfo.text.toString().trim(),
-                            mRouteList[spRoute.selectedItemPosition],
-                            etAdditionalRouteInfo.text.toString().trim(),
-                            etFrequency.text.toString().trim(),
-                            mMedicationId
+                                SharedPrefsManager.getLong(Const.USER_ID),
+                                if (uri != null) uri.toString() else "",
+                                etMedicationName.text.toString().trim(),
+                                etDose.text.toString().trim(),
+                                mDoesList[spDoesUnit.selectedItemPosition],
+                                etAdditionalDoesInfo.text.toString().trim(),
+                                mRouteList[spRoute.selectedItemPosition],
+                                etAdditionalRouteInfo.text.toString().trim(),
+                                etFrequency.text.toString().trim(),
+                                mMedicationId
                         )
 
                         hideLoader()
@@ -264,15 +262,15 @@ class AddMedicationsActivity : BaseActivity(), PhotoPickerFragment.Callback, Med
                     thread.start()
                 } else {
                     val medications = Medications(
-                        SharedPrefsManager.getLong(Const.USER_ID),
-                        if (uri != null) uri.toString() else "",
-                        etMedicationName.text.toString().trim(),
-                        etDose.text.toString().trim(),
-                        mDoesList[spDoesUnit.selectedItemPosition],
-                        etAdditionalDoesInfo.text.toString().trim(),
-                        mRouteList[spRoute.selectedItemPosition],
-                        etAdditionalRouteInfo.text.toString().trim(),
-                        etFrequency.text.toString().trim()
+                            SharedPrefsManager.getLong(Const.USER_ID),
+                            if (uri != null) uri.toString() else "",
+                            etMedicationName.text.toString().trim(),
+                            etDose.text.toString().trim(),
+                            mDoesList[spDoesUnit.selectedItemPosition],
+                            etAdditionalDoesInfo.text.toString().trim(),
+                            mRouteList[spRoute.selectedItemPosition],
+                            etAdditionalRouteInfo.text.toString().trim(),
+                            etFrequency.text.toString().trim()
                     )
                     medicationsViewModel.insert(medications)
 
@@ -304,10 +302,10 @@ class AddMedicationsActivity : BaseActivity(), PhotoPickerFragment.Callback, Med
 
     private fun openPicker() {
         PhotoPickerFragment.newInstance(
-            multiple = true,
-            allowCamera = true,
-            maxSelection = 1,
-            theme = R.style.ChiliPhotoPicker_Dark
+                multiple = true,
+                allowCamera = true,
+                maxSelection = 1,
+                theme = R.style.ChiliPhotoPicker_Dark
         ).show(supportFragmentManager, "picker")
     }
 
@@ -322,7 +320,8 @@ class AddMedicationsActivity : BaseActivity(), PhotoPickerFragment.Callback, Med
             .into(tvAddPicture)
 
         try {
-            val image = InputImage.fromFilePath(baseContext,uri)
+            val linesFound = mutableListOf<String>()
+            val image = InputImage.fromFilePath(baseContext, uri)
             val recognizer = TextRecognition.getClient()
             val result = recognizer.process(image)
                 .addOnSuccessListener { visionText ->
@@ -330,15 +329,19 @@ class AddMedicationsActivity : BaseActivity(), PhotoPickerFragment.Callback, Med
                         val blockText = block.text
                         val blockCornerPoints = block.cornerPoints
                         val blockFrame = block.boundingBox
+                        print("Block:")
+                        print(blockText)
                         for (line in block.lines) {
-                            val lineText = line.text
+                            linesFound.add(line.text)
                             val lineCornerPoints = line.cornerPoints
                             val lineFrame = line.boundingBox
                             for (element in line.elements) {
-                                val elementText = element.text
-                                val elementCornerPoints = element.cornerPoints
-                                val elementFrame = element.boundingBox
-                                print(elementText)
+                                linesFound.add(element.text)
+//                                val elementCornerPoints = element.cornerPoints
+//                                val elementFrame = element.boundingBox
+                                print("Element:")
+                                print(element.text)
+
                             }
                         }
                     }
@@ -346,6 +349,13 @@ class AddMedicationsActivity : BaseActivity(), PhotoPickerFragment.Callback, Med
                 .addOnFailureListener { e ->
                     e.printStackTrace()
                 }
+            val data = ArrayList<String>(linesFound)
+            DetectedFields.data = data
+            DetectedFields.uri = uri
+            val intent = Intent(this@AddMedicationsActivity, AutofillActivity::class.java)
+            intent.putExtra("mylist", data)
+            startActivity(intent)
+            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
         } catch (e: IOException) {
             e.printStackTrace()
         }
