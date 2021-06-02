@@ -1,0 +1,1 @@
+export {default as DS} from "./docstat";
