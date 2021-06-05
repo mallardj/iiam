@@ -4,7 +4,7 @@ import "./SideNav.css";
 const SideNav = (props) => {
 
 return (
-   <div class="fine" style={{width: props.width}}>
+   <div class="fine" style={{width: props.horizon.width, padding: props.horizon.padding}}>
       <button onClick={props.closeNav}>X</button>
       <h1>
          Welcome, {props.name}!

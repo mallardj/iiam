@@ -11,15 +11,15 @@ export class Routes extends React.Component {
     constructor (props) {
         super(props);
         this.state = {
-            width: "15%",
-            padding: "5%",
+            width: "20%",
+            padding: "2.5%",
         };
     }   
     render () {
   return (
     <div>
-        <button onClick={() => this.setState({in: true})}>Open</button>
-        <SideNav name="Yeehaw" horizon={this.state} closeNav={() => this.setState({in: false})}></SideNav>
+        <button onClick={() => this.setState({width: "20%", padding: "2.5%"})}>Open</button>
+        <SideNav name="Yeehaw" horizon={this.state} closeNav={() => this.setState({width: "0%", padding: "0%"})}></SideNav>
       <Switch>
         <Route exact path="/tasklist" component={TL} />
         <Route exact path="/">
