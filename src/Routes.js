@@ -11,16 +11,23 @@ export class Routes extends React.Component {
     constructor (props) {
         super(props);
         this.state = {
-            width: "20%",
-            padding: "2.5%",
+            width: 20,
+            padding: 2.5,
         };
     }   
     render () {
   return (
     <div>
-        <button onClick={() => this.setState({width: "20%", padding: "2.5%"})}>Open</button>
-        <SideNav name="Yeehaw" horizon={this.state} closeNav={() => this.setState({width: "0%", padding: "0%"})}></SideNav>
-      <Switch>
+        
+        <div><button 
+          onClick={() => this.setState({width: 20, padding: 2.5})}><div><img
+            src="./assets/icons/Hamburger_icon.svg"
+            height="20"
+            width="20"
+          />
+            </div></button><SideNav name="Yeehaw" horizon={this.state} closeNav={() => this.setState({width: 0, padding: 0})}></SideNav></div>
+        <div style={{paddingLeft: (this.state.width + 2 * this.state.padding) + "%", width: (100 - this.state.width) + "%"}}>
+        <Switch>
         <Route exact path="/tasklist" component={TL} />
         <Route exact path="/">
           <Redirect to="/tasklist" />
@@ -30,6 +37,8 @@ export class Routes extends React.Component {
       <Route exact path="/requestfax" component={RF} />
       <Route exact path="/settings" component={Settings} />
       </Switch>
+        </div>
+
     </div>
   );
 };
