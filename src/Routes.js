@@ -8,6 +8,8 @@ import { SideNav } from './components/SideNav/';
 import { Route, Switch, Redirect } from 'react-router-dom';
 import menuicon from "./assets/icons/Hamburger_icon.svg";
 import { Fade } from 'react-bootstrap';
+import { FQ } from "./views/tasklist/fllreq/fllreq.js";
+
 
 export class Routes extends React.Component {
     constructor (props) {
@@ -34,7 +36,7 @@ export class Routes extends React.Component {
           paddingLeft: (this.state.width + 2 * this.state.padding) + "%", 
           width: (100 - this.state.width) + "%"}}>
         <Fade><Switch>
-        <Route path="/tasklist" ><p>*The following is a list of medical information requested from you and/or your practice. Please click on the patient’s name to submit the appropriate records and complete the task.</p><TL/></Route>
+        <Route exact path="/tasklist" ><p>*The following is a list of medical information requested from you and/or your practice. Please click on the patient’s name to submit the appropriate records and complete the task.</p><TL/></Route>
         <Route exact path="/">
           <Redirect to="/tasklist" />
         </Route>
@@ -42,6 +44,7 @@ export class Routes extends React.Component {
       <Route exact path="/docstat" component={DS} />
       <Route exact path="/requestfax" component={RF} />
       <Route exact path="/settings" component={Settings} />
+      <Route path={`/tasklist/fulfill`} component={FQ} />
       </Switch></Fade>
         </div>
 

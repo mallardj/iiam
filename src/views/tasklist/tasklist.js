@@ -1,26 +1,17 @@
 import React from 'react';
 import "./index.css";
-import { Route, withRouter } from 'react-router-dom';
-import { FQ } from "./fllreq/fllreq.js";
+import { withRouter, useHistory} from 'react-router-dom';
 
-class TLR extends React.Component {
-  constructor (props) {
-    super(props);
-    this.case = props.case;
-    this.handleClick = this.handleClick.bind(this);
-  }
-  handleClick () {
-    this.props.history.push("/fulfill", {case: this.case});
-  }
 
-  render () {
-    return <tr onClick={this.handleClick}>
-      <td>{this.case.name}</td>
-      <td>{this.case.org}</td>
-      <td>{this.case.info}</td>
-      <td>{this.case.date}</td>
+function TLR (props) {
+    const history = useHistory();
+
+    return <tr onClick={() => history.push("/tasklist/fulfill", {case: props.case})}>
+      <td>{props.case.name}</td>
+      <td>{props.case.org}</td>
+      <td>{props.case.info}</td>
+      <td>{props.case.date}</td>
     </tr>;
-  }
 }
 
 class TLT extends React.Component {
@@ -61,7 +52,7 @@ class TLT extends React.Component {
     <tr>
     <TLR case={this.elements[4]} />
     </tr>
-    <Route path={`/tasklist/fulfill`} component={FQ} />
+    
   </table>;
   }
 }
