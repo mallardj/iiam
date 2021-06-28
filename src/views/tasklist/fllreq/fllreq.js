@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 
 const FQ = (props) => {
+    console.log(props);
     const [selectedFile, setSelectedFile] = useState();
 	const [isFilePicked, setIsFilePicked] = useState(false);
     const [isSelected, setIsSelected] = useState(false);
@@ -9,16 +10,20 @@ const FQ = (props) => {
 	const changeHandler = (event) => {
 		setSelectedFile(event.target.files[0]);
 		setIsSelected(!isSelected);
+        setIsFilePicked(true);
 	};
 
 	const handleSubmission = () => {
-	};
+        if (isFilePicked) {
+            console.log("File submitted.");
+        }
+    };
     return <div>
         <h1>Information Requested</h1>
-        <p>Patient Name: {props.name}<br/>
+        <p>Patient Name: {props.location.state.case.name}<br/>
         Record Number: Example Record Number<br/>
-        Request Submitted by: {props.org}<br/>
-        Information Details: {props.info}
+        Request Submitted by: {props.location.state.case.org}<br/>
+        Information Details: {props.location.state.case.info}
         </p>
         <input type="file" name="file" onChange={changeHandler} />
         {isSelected ? (

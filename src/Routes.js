@@ -9,6 +9,7 @@ import { Route, Switch, Redirect } from 'react-router-dom';
 import menuicon from "./assets/icons/Hamburger_icon.svg";
 import { Fade } from 'react-bootstrap';
 import { FQ } from "./views/tasklist/fllreq/fllreq.js";
+import { Login } from './views/login';
 
 
 export class Routes extends React.Component {
@@ -40,6 +41,7 @@ export class Routes extends React.Component {
         <Route exact path="/">
           <Redirect to="/tasklist" />
         </Route>
+        <Route exact path="/login" component={Login} />
       <Route exact path="/requestsub" component={SAR} />
       <Route exact path="/docstat" component={DS} />
       <Route exact path="/requestfax" component={RF} />

@@ -2,10 +2,10 @@ import React from 'react';
 import "./index.css";
 import { withRouter, useHistory} from 'react-router-dom';
 
+const { MongoClient } = require('mongodb');
 
 function TLR (props) {
     const history = useHistory();
-
     return <tr onClick={() => history.push("/tasklist/fulfill", {case: props.case})}>
       <td>{props.case.name}</td>
       <td>{props.case.org}</td>
@@ -17,6 +17,10 @@ function TLR (props) {
 class TLT extends React.Component {
   constructor (props) {
     super(props);
+    const uri = "mongodb+srv://admin:cWYHElXqPvRqn5UY@cluster0.vcqzz.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+    const client = MongoClient(uri);
+    // add stuff from database.
+    
     this.elements = [];
     for (let i = 0; i < 5; i ++) {
       this.elements.push(
@@ -28,6 +32,10 @@ class TLT extends React.Component {
         }
       )
     }
+
+
+
+
   }
   render () {
     return <table>
@@ -58,10 +66,7 @@ class TLT extends React.Component {
 }
 
 export class TL extends React.Component {
-  constructor (props) {
-    super(props);
-    
-  }
+
   render () {
     return (<div>
     <TLT></TLT>

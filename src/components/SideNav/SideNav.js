@@ -14,7 +14,7 @@ return (
          <li><Link to='/docstat' class="out">Document Status</Link></li>
          <li><Link to='/requestfax' class="out">Received Faxes</Link></li>
          <li><Link to='settings' class="out">Settings</Link></li>
-         <li><a href='/' class="out">Logout</a></li>
+         <li><Link to='/login' class="out">Logout</Link></li>
          </ul>
    </div>
  );
