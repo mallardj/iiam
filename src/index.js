@@ -5,6 +5,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import {Routes} from './Routes'
+import firebase from "firebase/app";
+import firebaseConfig from "./noaccess/noaccess.js"
+firebase.initializeApp(firebaseConfig);
 
 ReactDOM.render(
   <React.StrictMode>
